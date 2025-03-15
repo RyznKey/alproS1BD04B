@@ -1,19 +1,23 @@
-print (5,type(5))
+# variabel data
+jenisTipeData = " ini adalah type data : "
+dataList1 = 1,2,3,4
+dataList2 = "satu","dua","tiga","empat"
 
+# type data
 
-print (3.14,type(3.14))
+# Integer
+print (5,jenisTipeData,type(5))
+# Float
+print (3.14,jenisTipeData,type(3.14))
+# Complex
+print (1+2j,jenisTipeData,type(1+2j))
 
-print (1+2j,type(1+2j))
+# List
+print ([dataList1],jenisTipeData,type([dataList1]))
+print ([dataList2],jenisTipeData,type([dataList2]))
 
-
-print ([1,2,3,4],type([1,2,3,4]))
-
-print (["satu","dua","tiga","empat"],type(["satu","dua","tiga","empat"]))
-
-print ((1,2,3,4),type((1,2,3,4)))
-
-print (("satu","dua","tiga","empat"),type(("satu","dua","tiga","empat")))
-
-print ({"nama" : "budi","umur": 20},type({"nama" : "budi","umur": 20}))
-
-# menjalan kan seperti 
+# Tuple
+print ((dataList1),jenisTipeData,type((dataList1)))
+print ((dataList2),jenisTipeData,type((dataList2)))
+# Dictionary
+print ({"nama" : "budi","umur": 20},jenisTipeData,type({"nama" : "budi","umur": 20}))

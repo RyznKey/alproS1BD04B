@@ -1,3 +1,3 @@
 for i in range (10):
   # print("makan")
-  print("makan 3")
+  print("makan ",i+1)
