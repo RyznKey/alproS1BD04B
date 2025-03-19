@@ -1,8 +1,7 @@
-# tambahkan potongan kede berikut
-# menggunakan parameter sep= " " dan end= " "
+#  variabel input
+kota = input()
+alamat = input("Masukan Alamat domisili : ")
 
-print ("Purwokerto","Banyumas","Jawa Tengah",sep="-")
-print ("30","maret","1950", sep="/")
-print ("Purwokerto","Banyumas","Jawa Tengah",end="***")
-print ("Republik", end= " ")
-print ("Indonesia")
+# output
+print (f"nama kota : {kota}")
+print("Alamat domisili saya adalah : ", alamat)
