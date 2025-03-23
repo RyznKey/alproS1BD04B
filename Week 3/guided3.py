@@ -1,11 +1,11 @@
 # Latihan Output
 
-print(11,22,33)
+print(11,22,33) # output: 11 22 33
 
-print("Belajar membuat komputer dalam python")
+print("Belajar membuat komputer dalam python")  # output: Belajar membuat komputer dalam python
 
-prodi = "S1 Bisnis Digital"
-kampus = "Tel-U Purwokerto"
+prodi = "S1 Bisnis Digital" # variabel prodi
+kampus = "Tel-U Purwokerto" # variabel kampus
 
 print(f"program studi : {prodi},{kampus}")
 

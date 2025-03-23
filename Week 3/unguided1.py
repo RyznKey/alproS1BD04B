@@ -1,15 +1,30 @@
-baris = 10
-kolom = 1
+# fungsi untuk membuat segitiga
+def segitiga(sisi):
+  count = 1 # jumlah bintang
+  spasi = int(sisi/2) # spasi awal
+  while True:
+    # jika count ganjil, print bintang
+    if count%2:
+      print(" " * spasi + '*'*count)
+      spasi -=1
+      count +=1
+    else:
+      count +=1
+      continue
+    # jika jumlah bintang sudah mencapai sisi, break
+    if count > sisi:
+      break
 
+# fungsi untuk membuat persegi
+def persegi(sisi):
+  sisi = int(sisi/2)
+  for i in range(int(sisi)):
+    if sisi % 2: # jika sisi ganjil
+      print(" " * int(sisi/2), f'{i}' * sisi)
+    else:
+      print(" " * int(sisi/2), '*' * (sisi-1))
 
-
-for i in range (kolom,baris):
-  panah = baris - i
-  print(" " * panah,"*" * i, "*" *(baris -1))
-  # kiri = (" " * (baris-i),"*")
-  # print (kiri + kanan)
-
-  # print (" " * (baris-i),"*"," " * i, " " * i,"*")
-
-# for j in range (kolom, baris,2):
-#   print (" " * (baris-j),"*")
+# Main Program
+panjang = int(input("Masukkan panjang sisi: "))
+segitiga(panjang)
+persegi(panjang)

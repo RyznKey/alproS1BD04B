@@ -1,7 +1,7 @@
 #  variabel input
-kota = input()
-alamat = input("Masukan Alamat domisili : ")
+kota = input()  # input kota
+alamat = input("Masukan Alamat domisili : ")    # input alamat
 
 # output
-print (f"nama kota : {kota}")
-print("Alamat domisili saya adalah : ", alamat)
+print (f"nama kota : {kota}")   # output nama kota
+print("Alamat domisili saya adalah : ", alamat) # output alamat
