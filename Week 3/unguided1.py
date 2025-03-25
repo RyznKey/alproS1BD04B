@@ -19,7 +19,7 @@ def segitiga(sisi):
 def persegi(sisi):
   sisi = int(sisi/2)
   for i in range(int(sisi)):
-    if sisi % 2: # jika sisi ganjil
+    if sisi % 2: # jika sisi genap
       print(" " * int(sisi/2), f'{i}' * sisi)
     else:
       print(" " * int(sisi/2), '*' * (sisi-1))
