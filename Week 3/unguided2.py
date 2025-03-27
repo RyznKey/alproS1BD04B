@@ -1,5 +1,5 @@
 
-# # program yang meminta inputan dari user berupa 
+# program yang meminta inputan dari user berupa 
 # nama = str(input ("Masukkan nama Anda: "))          # input nama
 # NIM = int(input ("Masukkan NIM Anda: "))            # input NIM
 # alamat = str(input ("Masukkan alamat Anda: "))      # input alamat
@@ -10,7 +10,7 @@
 # berat = float(input ("Masukkan berat Anda: "))      # input berat
 
 # # output data yang telah diinputkan
-# print ("Nama saya adalah", nama)
+# print ("Nama saya adalah :", nama)
 # print ("NIM saya adalah", NIM)
 # print ("Alamat saya adalah", alamat)
 # print ("Tanggal lahir saya adalah", tanggal_lahir)
@@ -54,5 +54,6 @@ umur = 21
 tinggi = 170
 berat = 60
 
+# membuat objek mahasiswa
 mhs = Mahasiswa(nama, NIM, alamat, tanggal_lahir, jenis_kelamin, umur, tinggi, berat)  
 print(mhs) # print objek mahasiswa
