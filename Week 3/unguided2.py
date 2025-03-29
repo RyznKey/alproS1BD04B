@@ -1,13 +1,26 @@
-
 # program yang meminta inputan dari user berupa 
-# nama = str(input ("Masukkan nama Anda: "))          # input nama
-# NIM = int(input ("Masukkan NIM Anda: "))            # input NIM
-# alamat = str(input ("Masukkan alamat Anda: "))      # input alamat
-# tanggal_lahir = str(input ("Masukkan tanggal lahir Anda: ")) # input tanggal lahir
-# jenis_kelamin = str(input ("Masukkan jenis kelamin Anda: ")) # input jenis kelamin
-# umur = int(input ("Masukkan umur Anda: "))          # input umur
-# tinggi = float(input ("Masukkan tinggi Anda: "))    # input tinggi
-# berat = float(input ("Masukkan berat Anda: "))      # input berat
+nama = str(input ("Masukkan nama Anda: "))          # input nama
+NIM = int(input ("Masukkan NIM Anda: "))            # input NIM
+alamat = str(input ("Masukkan alamat Anda: "))      # input alamat
+tanggal_lahir = str(input ("Masukkan tanggal lahir Anda: ")) # input tanggal lahir
+jenis_kelamin = str(input ("Masukkan jenis kelamin Anda: ")) # input jenis kelamin
+umur = int(input ("Masukkan umur Anda: "))          # input umur
+tinggi = float(input ("Masukkan tinggi Anda: "))    # input tinggi
+berat = float(input ("Masukkan berat Anda: "))      # input berat
+
+display = f"""
+{"="*10} Data Mahasiswa {"="*10}
+nama            : {nama}
+NIM             : {NIM}
+alamat          : {alamat}
+tanggal lahir   : {tanggal_lahir}
+jenis kelamin   : {jenis_kelamin}
+umur            : {umur}   tahun
+tinggi          : {tinggi} cm
+berat           : {berat}  kg
+"""
+print(display) # print data mahasiswa
+
 
 # # output data yang telah diinputkan
 # print ("Nama saya adalah :", nama)

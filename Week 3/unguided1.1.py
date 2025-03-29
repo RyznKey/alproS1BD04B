@@ -1,17 +1,19 @@
-# sisi = 10  # Ukuran kepala panah
+sisi = 9
+spasi = sisi // 2  # Spasi awal untuk segitiga
 
-# # Membuat kepala panah (outline segitiga)
-# for count in range(1, sisi + 1, 2):  
-#     space = (sisi - count) // 2  
+# Loop untuk pola segitiga
+for count in range(1, sisi, 2):  # Menggunakan step 2 untuk pola segitiga
+    if count == 1:
+        print(" " * spasi + "*")  # Baris pertama segitiga
+    elif count == sisi - 1:
+        print("*" * (count) + " " * 3 + "*" * (count))  # Baris terakhir segitiga dengan tiga bintang di tengah
+    else:
+        print(" " * spasi + "*" + " " * (count - 2) + "*")  # Baris tengah segitiga
+    spasi -= 1  # Mengurangi spasi setiap kali ke baris berikutnya
 
-#     if count == 1:  
-#         print(" " * space + "*")  # Cetak satu bintang di puncak
-#     elif count == sisi:  
-#         print("***" + " " * (count - 5) + "***")  # Cetak *** di awal dan akhir
-#     else:  
-#         print(" " * space + "*" + " " * (count - 2) + "*")  # Cetak outline
+# Loop untuk pola persegi panjang (bagian bawah panah)
+for i in range(sisi // 3):  # Tinggi persegi panjang disesuaikan
+    print(" " * (sisi // 3) + "*" + " " * (sisi // 3) + "*")  # Dua bintang dengan spasi tengah
 
-# # Membuat batang panah dengan tengah kosong kecuali di baris terakhir
-# batang_tinggi = sisi // 2  # Tinggi batang panah
-# batang_lebar = sisi // 3   # Lebar batang
-print(3%2)
+# Baris terakhir persegi panjang
+print(" " * (sisi // 3) + "*" * (sisi + 2))  # Baris penuh dengan bintang
