@@ -3,9 +3,9 @@ a = 9
 b = 5
 
 # Pertanyaan
-print("a) Apakah a = b?  ", a == b) # bernilai True jika a sama dengan b dan False jika a tidak sama dengan b
-print("b) Apakah a < b?  ", a <  b) # bernilai True jika a lebih kecil dari b dan False jika a tidak lebih kecil dari b
-print("c) Apakah a > b?  ", a >  b) # bernilai True jika a lebih besar dari b dan False jika tidak a lebih besar dari b
-print("d) Apakah a <= b? ", a <= b) # bernilai True jika a lebih kecil sama dengan b dan False jika tidak a lebih kecil sama dengan b
-print("e) Apakah a >= b? ", a >= b) # bernilai True jika a lebih besar sama dengan b dan False jika tidak a lebih besar sama dengan b
-print("f) Apakah a != b? ", a != b) # bernilai True jika a tidak sama dengan b dan False jika sama a tidak sama dengan b
+print("a) Apakah a = b?  ", a == b) # menghasilkan nilai False karena 9 tidak sama dengan 5, bernilai True jika a sama dengan 5
+print("b) Apakah a < b?  ", a <  b) # menghasilkan nilai False karena 9 lebih besar dari  5, bernilai True jika a lebih kecil dari 5
+print("c) Apakah a > b?  ", a >  b) # menghasilkan nilai True  karena 9 lebih besar dari  5, bernilai True jika a lebih besar dari 5
+print("d) Apakah a <= b? ", a <= b) # menghasilkan nilai False karena 9 lebih besar dari  5, bernilai True jika a lebih kecil sama dengan 5
+print("e) Apakah a >= b? ", a >= b) # menghasilkan nilai True  karena 9 lebih besar dari  5, bernilai True jika a lebih besar sama dengan 5
+print("f) Apakah a != b? ", a != b) # menghasilkan nilai True  karena 9 tidak sama dengan 5, bernilai True jika a tidak sama dengan 5
