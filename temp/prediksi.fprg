@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="prediksi"/>
+        <attribute name="authors" value="msi1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-06 10.48.50 PM"/>
+        <attribute name="created" value="bXNpMTtNU0k7MjAyNS0wNC0wNjswOC4zMy40NSBQTTsxODcz"/>
+        <attribute name="edited" value="bXNpMTtNU0k7MjAyNS0wNC0wNjsxMC40OC41MCBQTTszOzE5Nzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="selectMenu, MENU" type="Integer" array="False" size=""/>
+            <declare name="harga, hasil, jarak" type="Real" array="False" size=""/>
+            <declare name="kategoriDua" type="String" array="True" size="5"/>
+            <assign variable="kategoriDua[0]" expression="&quot;exit&quot;"/>
+            <assign variable="kategoriDua[1]" expression="&quot;motor&quot;"/>
+            <assign variable="kategoriDua[2]" expression="&quot;gojek&quot;"/>
+            <assign variable="kategoriDua[3]" expression="&quot;grab&quot;"/>
+            <declare name="kondisi" type="Boolean" array="False" size=""/>
+            <assign variable="kondisi" expression="True"/>
+            <while expression="kondisi">
+                <output expression="&quot;======= MENU =======&quot;" newline="True"/>
+                <for variable="MENU" start="0" end="3" direction="inc" step="1">
+                    <output expression="MENU &amp; &quot;.&quot; &amp; kategoriDua[MENU]" newline="True"/>
+                </for>
+                <input variable="selectMenu"/>
+                <if expression="selectMenu == 1">
+                    <then>
+                        <output expression="&quot;Masukan Jarak Tempuh Anda : &quot;" newline="True"/>
+                        <assign variable="harga" expression="12500/40"/>
+                        <input variable="jarak"/>
+                        <assign variable="hasil" expression="jarak * harga"/>
+                        <output expression="hasil" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="selectMenu == 2">
+                            <then>
+                                <output expression="&quot;Masukan Jarak Tempuh Anda : &quot;" newline="True"/>
+                                <assign variable="harga" expression="random(2500)"/>
+                                <output expression="&quot;Harga GoRide saat ini Rp.&quot; &amp; harga" newline="True"/>
+                                <input variable="jarak"/>
+                                <assign variable="hasil" expression="jarak * harga + (random(15)/100)"/>
+                                <output expression="hasil" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="selectMenu == 3">
+                                    <then>
+                                        <output expression="&quot;Masukan Jarak Tempuh Anda : &quot;" newline="True"/>
+                                        <assign variable="harga" expression="random(2500)"/>
+                                        <output expression="&quot;Harga GoRide saat ini Rp.&quot; &amp; harga" newline="True"/>
+                                        <input variable="jarak"/>
+                                        <assign variable="hasil" expression="jarak * harga + (random(30)/100)"/>
+                                        <output expression="hasil" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="selectMenu == 0">
+                                            <then>
+                                                <assign variable="kondisi" expression="False"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Harap Masukan Angka dengan Benar&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+    <function name="acak" type="None" variable="">
+        <parameters>
+            <parameter name="harga" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <call expression="randint(1, 10)"/>
+            <output expression="randint(1, 10)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
