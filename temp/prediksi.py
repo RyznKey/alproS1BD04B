@@ -26,7 +26,14 @@ while kondisi:
     hargaPerKm = rd.randint(20000, 25000)
     print ("Harga Gojek per km: ", hargaPerKm)
     inputJarak = float(input("Masukan jarak tempuh : "))
-    hasil = inputJarak * (harga+() 
+    hasil = inputJarak * hargaPerKm
+    print ("Biaya yang harus dibayar: ", int(hasil))
+  elif selectMenu == "3" or selectMenu == "grab":
+    print ("Anda memilih grab")
+    hargaPerKm = rd.randint(20000, 25000)
+    print ("Harga Grab per km: ", hargaPerKm)
+    inputJarak = float(input("Masukan jarak tempuh : "))
+    hasil = inputJarak * hargaPerKm
     print ("Biaya yang harus dibayar: ", int(hasil))
   else:
     print ("Pilihan tidak ada, Harap masukan dengan benar")
