@@ -4,9 +4,9 @@
         <attribute name="name" value="prediksi"/>
         <attribute name="authors" value="msi1"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-04-06 10.48.50 PM"/>
+        <attribute name="saved" value="2025-04-13 11.27.18 PM"/>
         <attribute name="created" value="bXNpMTtNU0k7MjAyNS0wNC0wNjswOC4zMy40NSBQTTsxODcz"/>
-        <attribute name="edited" value="bXNpMTtNU0k7MjAyNS0wNC0wNjsxMC40OC41MCBQTTszOzE5Nzg="/>
+        <attribute name="edited" value="bXNpMTtNU0k7MjAyNS0wNC0xMzsxMS4yNy4xOCBQTTs0OzE5Nzk="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -21,37 +21,46 @@
             <declare name="kondisi" type="Boolean" array="False" size=""/>
             <assign variable="kondisi" expression="True"/>
             <while expression="kondisi">
-                <output expression="&quot;======= MENU =======&quot;" newline="True"/>
+                <output expression="&quot;===== MENU =====&quot;" newline="True"/>
                 <for variable="MENU" start="0" end="3" direction="inc" step="1">
                     <output expression="MENU &amp; &quot;.&quot; &amp; kategoriDua[MENU]" newline="True"/>
                 </for>
+                <output expression="&quot;===== MENU =====&quot;" newline="True"/>
+                <output expression="&quot;Pilih menu:&quot;" newline="True"/>
                 <input variable="selectMenu"/>
-                <if expression="selectMenu == 1">
+                <if expression="selectMenu == 1 or selectMenu == &quot;motor&quot;">
                     <then>
                         <output expression="&quot;Masukan Jarak Tempuh Anda : &quot;" newline="True"/>
-                        <assign variable="harga" expression="12500/40"/>
+                        <declare name="kmpliter" type="Integer" array="False" size=""/>
+                        <assign variable="harga" expression="12500"/>
+                        <output expression="&quot;Harga Bensin per liter: &quot; &amp; harga" newline="True"/>
+                        <output expression="&quot;Masukan km/liter motor anda : &quot;" newline="True"/>
+                        <input variable="kmpliter"/>
+                        <output expression="&quot;Masukan jarak tempuh : &quot;" newline="True"/>
                         <input variable="jarak"/>
-                        <assign variable="hasil" expression="jarak * harga"/>
+                        <assign variable="hasil" expression="jarak * (harga /kmpliter)"/>
                         <output expression="hasil" newline="True"/>
                     </then>
                     <else>
-                        <if expression="selectMenu == 2">
+                        <if expression="selectMenu == 2 or selectMenu == &quot;gojek&quot;">
                             <then>
                                 <output expression="&quot;Masukan Jarak Tempuh Anda : &quot;" newline="True"/>
                                 <assign variable="harga" expression="random(2500)"/>
                                 <output expression="&quot;Harga GoRide saat ini Rp.&quot; &amp; harga" newline="True"/>
+                                <output expression="&quot;Masukan jarak tempuh : &quot;" newline="True"/>
                                 <input variable="jarak"/>
-                                <assign variable="hasil" expression="jarak * harga + (random(15)/100)"/>
+                                <assign variable="hasil" expression="jarak * harga"/>
                                 <output expression="hasil" newline="True"/>
                             </then>
                             <else>
                                 <if expression="selectMenu == 3">
                                     <then>
                                         <output expression="&quot;Masukan Jarak Tempuh Anda : &quot;" newline="True"/>
-                                        <assign variable="harga" expression="random(2500)"/>
+                                        <assign variable="harga" expression="random(3000)"/>
                                         <output expression="&quot;Harga GoRide saat ini Rp.&quot; &amp; harga" newline="True"/>
+                                        <output expression="&quot;Masukan jarak tempuh : &quot;" newline="True"/>
                                         <input variable="jarak"/>
-                                        <assign variable="hasil" expression="jarak * harga + (random(30)/100)"/>
+                                        <assign variable="hasil" expression="jarak * harga"/>
                                         <output expression="hasil" newline="True"/>
                                     </then>
                                     <else>
