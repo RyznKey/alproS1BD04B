@@ -18,26 +18,23 @@ def hitung_keliling(p, l):
 def hitung_diagonal(p, l):
   return math.sqrt(p * p + l * l)
 
-def main():
-  while True:
-    pilihan = menu()
-    if pilihan in [1, 2, 3]:
-      p = float(input("Masukkan panjang (P): "))
-      l = float(input("Masukkan lebar (L): "))
-      
-      if pilihan == 1:
-        print(f"Luas persegi panjang = {hitung_luas(p, l)}")
-      elif pilihan == 2:
-        print(f"Keliling persegi panjang = {hitung_keliling(p, l)}")
-      elif pilihan == 3:
-        print(f"Panjang diagonal persegi panjang = {hitung_diagonal(p, l)}")
-    else:
-      print("Pilihan tidak valid. Silakan coba lagi.")
+
+while True:
+  pilihan = menu()
+  if pilihan in [1, 2, 3]:
+    p = float(input("Masukkan panjang (P): "))
+    l = float(input("Masukkan lebar (L): "))
     
-    lanjut = input("Apakah Anda ingin melanjutkan? (y/n): ").lower()
-    if lanjut != 'y':
-      print("Terima kasih telah menggunakan program ini.")
-      break
-
-
-main()
+  if pilihan == 1:
+    print(f"Luas persegi panjang = {hitung_luas(p, l)}")
+  elif pilihan == 2:
+    print(f"Keliling persegi panjang = {hitung_keliling(p, l)}")
+  elif pilihan == 3:
+    print(f"Panjang diagonal persegi panjang = {hitung_diagonal(p, l)}")
+  else:
+    print("Pilihan tidak valid. Silakan coba lagi.")
+    
+  lanjut = input("Apakah Anda ingin melanjutkan? (y/n): ").lower()
+  if lanjut != 'y':
+    print("Terima kasih telah menggunakan program ini.")
+    break
