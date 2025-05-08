@@ -25,3 +25,8 @@ class MahasiswaDigital(Pengguna):
 # Membuat objek dari kelas turunan
 mhs_digital = MahasiswaDigital("Aloy Renaloy", "aloy@gmail.com", "BD003", "Bisnis Digital")
 mhs_digital.tampilkan_info()
+
+"""
+
+
+"""
