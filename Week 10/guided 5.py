@@ -13,7 +13,7 @@ class Produk:
     print(f"Kode: {self.kode}")
     print(f"Nama: {self.nama}")
     print(f"Harga: Rp{self.harga}")
-    print(f"Kategori: {self.kategori.nama}")
+    print(f"Kategori: {self.kategori.nama}") # disimpan sebagai 
 
 # Contoh penggunaan
 if __name__ == "__main__":
