@@ -57,34 +57,38 @@ Example:
 # +-------------------+
 
 class Penulis:
+  # Constructor to initialize the author's name and country of origin
   def __init__(self, nama, asal_negara):
-    self.nama = nama
-    self.asal_negara = asal_negara
+    self.nama = nama  # Author's name
+    self.asal_negara = asal_negara  # Author's country of origin
 
+  # Method to return author's information as a string
   def info(self):
     return f"Penulis: {self.nama}, Asal Negara: {self.asal_negara}"
 
 
 class Buku:
+  # Constructor to initialize the book's title, code, price, and author
   def __init__(self, judul, kode_buku, harga, penulis):
-    self.judul = judul
-    self.kode_buku = kode_buku
-    self.harga = harga
-    self.penulis = penulis
+    self.judul = judul  # Book title
+    self.kode_buku = kode_buku  # Unique book code
+    self.harga = harga  # Book price
+    self.penulis = penulis  # Author of the book (Penulis object)
 
+  # Method to return book's information, including author's details, as a string
   def info(self):
     return (f"Judul Buku: {self.judul}, Kode Buku: {self.kode_buku}, "
         f"Harga: Rp{self.harga}, {self.penulis.info()}")
 
 
-# Membuat data penulis
-penulis1 = Penulis("Tere Liye", "Indonesia")
-penulis2 = Penulis("J.K. Rowling", "Inggris")
+# Creating author data
+penulis1 = Penulis("Tere Liye", "Indonesia")  # Author 1
+penulis2 = Penulis("J.K. Rowling", "Inggris")  # Author 2
 
-# Membuat data buku
-buku1 = Buku("Hujan", "B001", 85000, penulis1)
-buku2 = Buku("Harry Potter", "B002", 150000, penulis2)
+# Creating book data
+buku1 = Buku("Hujan", "B001", 85000, penulis1)  # Book 1 associated with Author 1
+buku2 = Buku("Harry Potter", "B002", 150000, penulis2)  # Book 2 associated with Author 2
 
-# Menampilkan informasi lengkap
-print(buku1.info())
-print(buku2.info())
+# Displaying complete information about the books
+print(buku1.info())  # Print information of Book 1
+print(buku2.info())  # Print information of Book 2

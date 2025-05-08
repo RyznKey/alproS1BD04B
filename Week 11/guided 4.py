@@ -33,7 +33,6 @@ class Segitiga(BentukAbstrak): # Kelas Segitiga mewarisi kelas BentukAbstrak
 # Penggunaan
 try:
   bentuk = BentukAbstrak()  # Error: kelas abstrak
-  print("Tidak bisa membuat objek dari kelas abstrak 33")
 except TypeError as e:
   print("Tidak bisa membuat objek dari kelas abstrak")
 
