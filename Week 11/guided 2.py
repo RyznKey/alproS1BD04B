@@ -10,7 +10,7 @@ class Siswa:
     return self.__nilai
 
   def set_nilai(self, nilai_baru): # Setter nilai
-    if 0 <= nilai_baru <= 100:
+    if 0 <= nilai_baru <= 100: 
       self.__nilai = nilai_baru
       return True
     return False
