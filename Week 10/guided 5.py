@@ -1,32 +1,37 @@
+# Define a class to represent a category
 class Kategori:
   def __init__(self, nama):
+    # Initialize the category with a name
     self.nama = nama
 
+# Define a class to represent a product
 class Produk:
   def __init__(self, kode, nama, harga, kategori):
+    # Initialize the product with a code, name, price, and category
     self.kode = kode
     self.nama = nama
     self.harga = harga
     self.kategori = kategori
 
+  # Method to display product information
   def info(self):
-    print(f"Kode: {self.kode}")
-    print(f"Nama: {self.nama}")
-    print(f"Harga: Rp{self.harga}")
-    print(f"Kategori: {self.kategori.nama}") # disimpan sebagai 
+    print(f"Kode: {self.kode}")  # Display product code
+    print(f"Nama: {self.nama}")  # Display product name
+    print(f"Harga: Rp{self.harga}")  # Display product price
+    print(f"Kategori: {self.kategori.nama}")  # Display category name
 
-# Contoh penggunaan
+# Example usage
 if __name__ == "__main__":
-  # Membuat kategori
-  kat_elektronik = Kategori("Elektronik")
-  kat_pakaian = Kategori("Pakaian")
+  # Create categories
+  kat_elektronik = Kategori("Elektronik")  # Create an "Elektronik" category
+  kat_pakaian = Kategori("Pakaian")  # Create a "Pakaian" category
 
-  # Membuat produk
-  laptop = Produk("P001", "Laptop Gaming", 8000000, kat_elektronik)
-  kaos = Produk("P002", "Kaos Skena", 150000, kat_pakaian)
+  # Create products
+  laptop = Produk("P001", "Laptop Gaming", 8000000, kat_elektronik)  # Create a laptop product
+  kaos = Produk("P002", "Kaos Skena", 150000, kat_pakaian)  # Create a t-shirt product
 
-  # Menampilkan informasi produk
+  # Display product information
   print("=== Info Produk 1 ===")
-  laptop.info()
+  laptop.info()  # Display information for the laptop
   print("\n=== Info Produk 2 ===")
-  kaos.info()
+  kaos.info()  # Display information for the t-shirt
